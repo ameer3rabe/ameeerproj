@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>GoFit</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav container">
+            <div class="nav__logo">
+                <i class='bx bx-dumbbell bx-rotate-180'></i> GoFit
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <!-- Nav menu -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">Home</a></li>
+                    <li><a href="#" class="nav__link">Meet the Team</a></li>
+                    <li><a href="#" class="nav__link">Classes</a></li>
+                    <li><a href="#" class="nav__link">Membership</a></li>
+                    <li><a href="#" class="nav__link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#" id="signin-link" class="login-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login form modal (initially hidden) -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="signin">
+                <div class="content">
+                    <h2>Sign In</h2>
+                    <div class="form">
+                        <div class="inputBox">
+                            <input type="text" required> <i>Username</i>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" required> <i>Password</i>
+                        </div>
+                        <div class="links">
+                            <a href="#">Forgot Password</a>
+                            <a href="#">Create Account</a>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Login">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Home Section -->
+    <section class="Home">
+        <div class="mycontain">
+            <div class="contain-text-img">
+                <div class="hero-text-wrapper">
+                    <h1 class="herotext" id="white">THE ONLY</h1>
+                    <h1 class="herotext" id="yellow">IMPOSSIBLE JOURNEY</h1>
+                    <h1 class="herotext" id="white">IS THE ONE YOU</h1>
+                    <h1 class="herotext" id="yellow">NEVER BEGIN.</h1>
+                    <button class="cta-button">Begin Your Journey</button>
+                </div>
+                <div class="hero-image-wrapper"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Meet The Team -->
+    <section class="MeettheTeam">
+        <div class="Meet-Contain">
+            <div class="meet-the-team-wrapper">
+            <h2 class="sectionheading">MEET THE TEAM</h2>
+            <h2 class="large-opacity-title">MEET THE TEAM</h2>
+            <div class="team-members-wrapper">
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">Bryan Hunter</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio"> Founder & Owner</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm1"></div>
+                    </div>
+                </div>
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">TOM DOWNEY</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio">Coach</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm2"></div>
+                    </div>
+                </div>
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">SIMONE WALTERS</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio">Coach</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm3"></div>
+                    </div>
+                </div>
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">HENRY JENKIS</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio">Coach</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm4"></div>
+                    </div>
+                </div>
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">LAUREN TILTMAN</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio">Coach</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm5"></div>
+                    </div>
+                </div>
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">KAI RICHARDS</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio">Coach</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm6"></div>
+                    </div>
+                </div>
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">ELOISE BANKS</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio">Coach</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm7"></div>
+                    </div>
+                </div>
+                <div class="teammemberblock">
+                    <div class="teammemberimagewrapper">
+                        <div class="team-member-content-overlay">
+                            <div class="team-member-overlay-block">
+                                <div class="Tm-Content-wrapper">
+                                    <t class="tm-name">FRAISER BECKETT</t>
+                                    <div class="div-block"></div>
+                                    <t class="tm-bio">Coach</t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tm-image">
+                        <div class="tm8"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Classes-->
+    <section class="featuredclasses_section">
+      <div class="mycontain"> 
+        <div class="featured-classes-wrapper">
+            <h2 class="sectionheading">FEATURED CLASSES</h2>
+            <h2 class="large-opacity-title">FEATURED CLASSES</h2>
+            <div class="featured-classes-block-wrapper">
+                <div class="featuredclassblock">
+                    <div class="featureclasswrapper">
+                        <div class="featureclassimage">
+                            <div class="featureclassimage fcimage1">
+                                <t class="featureclassheading">CROSSFIT - BEGINNERS CLASS</t>
+                                <button class="cta-button1">BOOK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredclassblock">
+                    <div class="featureclasswrapper">
+                        <div class="featureclassimage">
+                            <div class="featureclassimage fcimage2">
+                                <t class="featureclassheading">CROSSFIT - GYMINASTICS</t>
+                                <button class="cta-button1">BOOK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredclassblock">
+                    <div class="featureclasswrapper">
+                        <div class="featureclassimage">
+                            <div class="featureclassimage fcimage3">
+                                <t class="featureclassheading">CROSSFIT - OLYMPIC LIFTING</t>
+                                <button class="cta-button1">BOOK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featuredclassblock">
+                    <div class="featureclasswrapper">
+                        <div class="featureclassimage">
+                            <div class="featureclassimage fcimage4">
+                                <t class="featureclassheading">CROSSFIT - FEMALE ONLY</t>
+                                <button class="cta-button1">BOOK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Stats-->
+    <section class="stats_section">
+        <div class="mycontain">
+            <div class="stats-wrapper">
+                <div class="statflexwrapper">
+                    <t class="counter">45</t>
+                    <t class="statstatement">DIFFERENT MODULES</t>
+                </div>
+                <div class="statflexwrapper">
+                    <t class="counter">60</t>
+                    <t class="statstatement">MINUTES PER CLASS</t>
+                </div>
+                <div class="statflexwrapper">
+                    <t class="counter">20</t>
+                    <t class="statstatement">CLASSES PER WEEK</t>
+                </div>
+                <div class="statflexwrapper">
+                    <t class="counter">01</t>
+                    <t class="statstatement">UNITED GOAL</t>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--MemberShip-->
+    <section class="membership_section">
+        <div class="mycontain">
+            <div class="membership-section-wrapper">
+                <h2 class="sectionheading">MEMBERSHIPS</h2>
+                <h2 class="large-opacity-title" id="large-2">MEMBERSHIPS</h2>
+            </div>
+            <div class="membership-price-table-wrapper">
+                <div class="membership_panel" id="grey_panel">
+                    <div class="membershippanel_content_wrapper">
+                        <t class="membership_panel_heading">FLEXI</t>
+                        <div class="membership-icon-wrapper">
+                            <i class='bx bxs-hot'></i>
+                        </div>
+                        <t class="membership_price"><span class="text-span"><i class='bx bx-shekel' ></i>99.99</span> / Month</t>
+                        <div class="membership-details-wrapper">
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">12 Classes Per Month</t>
+                            </div>
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">3 Classes Per Week</t>
+                            </div>
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">No Joining fees</t>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">JOIN TODAY</button>
+                </div>
+                <div class="membership_panel">
+                    <div class="membershippanel_content_wrapper">
+                        <t class="membership_panel_heading">ALL ACCESS</t>
+                        <div class="membership-icon-wrapper">
+                            <i class='bx bx-infinite'></i>
+                        </div>
+                        <t class="membership_price"><i class='bx bx-shekel'></i><span class="text-span">199.99</span> / Month </t>
+                        <div class="membership-details-wrapper">
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">Unlimited Classes Per Month</t>
+                            </div>
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">3 Classes Per Day</t>
+                            </div>
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">No Joining fees</t>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">Join Today</button>
+                </div>
+                <div class="membership_panel" id="grey_panel">
+                    <div class="membershippanel_content_wrapper">
+                        <t class="membership_panel_heading">OFF-PEAK</t>
+                        <div class="membership-icon-wrapper">
+                            <i class='bx bx-adjust'></i>
+                        </div>
+                        <t class="membership_price"><i class='bx bx-shekel'></i><span class="text-span">149.99</span> / Month </t>
+                        <div class="membership-details-wrapper">
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">20 Classes Per Month</t>
+                            </div>
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">5 Classes Per Week</t>
+                            </div>
+                            <div class="subscription_point_wrapper">
+                                <div class="tickbox">
+                                    <i class='bx bx-check-circle'></i>
+                                </div>
+                                <t class="subscription_point_text">No Joining fees</t>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">Join Today</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Start Sticky Icon--> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<div class="sticky-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <a href="https://www.instagram.com/?hl=en" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+   <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+   <a href="https://www.waze.com/he/live-map/" class="Waze"><i class="fa-brands fa-waze"></i> </i> Waze </a>
+   <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
+   <a  class="Phone"><i class="fa-solid fa-phone"></i> 0512345633 </a>   
+</div>
+    <!--End Sticky Icon-->
+
+    <!--Footer-->
+    <section class="footer_section">
+        <div class="widecontain">
+            <div class="footer-wrapper">
+                <div class="address-wrapper">
+                    <url class="footer-address-text">hello@journey.com</url>
+                    <t class="footer-address-text">050-9990000</t>
+                    <t class="footer-address-text">Studio GoFit</t>
+                </div>
+                <div class="footermenuwrapper">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--EndFooter-->
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
